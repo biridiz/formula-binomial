@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  
+  <body style="background-color: #00693e4d">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>
+            <img src="logo.png" width="80" height="30">
+            Fórmula binomial 
+          </h1>
+          <span style="font-size: 12px">Trabalho 1 da disciplina de Probabilidade e Estatística</span>
+          <br><br>
+          <div>
+            Porcentagem: 
+            <input style="margin-right: 15px;"class="form-label" checked="true" type="radio" name="type" id="percent">
+            Número inteiro:
+            <input class="form-label" type="radio" name="type" id="int">
+          </div><br>  
+          <div>
+            Acumulado (<= x): 
+            <input class="form-label" type="checkbox" id="acum">
+          </div><br>
+          <div>
+            <div class="form-group col-3">
+              n
+              <input class="form-control form-label" id="n" type="number">
+              p
+              <input class="form-control form-label" id="p" type="number">
+              x
+              <input class="form-control form-label" id="x" type="number">
+              <button style="margin-top: 10px;" type="button" class="btn btn-success" id="calculateButton">Calcular</button>
+            </div>
+            <div style="margin-top: 10px; font-size: 24px" id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="index.js"></script>
+</html>
